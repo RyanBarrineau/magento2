@@ -37,7 +37,7 @@ After verifying your prerequisites, perform the following tasks in order to prep
 1.	<a href="http://devdocs.magento.com/guides/v2.0/install-gde/install/composer-clone.html#instgde-prereq-compose-install">Install Composer</a>
 2.	Clone Repository: ```git clone git@github.com:BlueAcornInc/magento2ee.git```
 3.	Install Dependencies: ```composer install```
-4.	Set Permissions: ```cd webroot && sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod +x bin/magento```
+4.	Set Permissions: ```sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod +x bin/magento```
 5.	Import DB:
 	* Option 1 - Clean Install: ```./bin/magento setup:install --base-url=http://rds.dev 
 --backend-frontname=admin --db-host=localhost --db-name=rds --db-user=@@db_user --db-password=@@db_password --admin-firstname=@@firstname --admin-lastname=@@lastname --admin-email=@@email --admin-user=@@admin_user --admin-password=@@admin_password --language=en_US --currency=USD --timezone=America/New_York --use-rewrites=1```
