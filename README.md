@@ -39,7 +39,7 @@ After verifying your prerequisites, perform the following tasks in order to prep
 3.	Install Dependencies: ```composer install```
 4.	Set Permissions: ```sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod +x bin/magento```
 5.	Import DB:
-	* Option 1 - Clean Install: ```./bin/magento setup:install --base-url=http://rds.dev 
+	* Option 1 - Clean Install: ```./bin/magento setup:install --base-url=http://magento2.dev 
 --backend-frontname=admin --db-host=localhost --db-name=rds --db-user=@@db_user --db-password=@@db_password --admin-firstname=@@firstname --admin-lastname=@@lastname --admin-email=@@email --admin-user=@@admin_user --admin-password=@@admin_password --language=en_US --currency=USD --timezone=America/New_York --use-rewrites=1```
 6.	Setup vhost and restart apache
 
