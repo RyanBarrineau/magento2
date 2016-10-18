@@ -41,7 +41,11 @@ After verifying your prerequisites, perform the following tasks in order to prep
 5.	Import DB:
 	* Option 1 - Clean Install: ```./bin/magento setup:install --base-url=http://magento2.dev 
 --backend-frontname=admin --db-host=localhost --db-name=magento2 --db-user=@@db_user --db-password=@@db_password --admin-firstname=@@firstname --admin-lastname=@@lastname --admin-email=@@email --admin-user=@@admin_user --admin-password=@@admin_password --language=en_US --currency=USD --timezone=America/New_York --use-rewrites=1```
-6.	Setup vhost and restart apache
+7.	Install sample data if none eists ```./bin/magento sampledata:deploy```
+8.	Run Setup Upgrade ```./bin/magento setup:upgrade```
+9.	Set Permissions ```sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod +x bin/magento```
+9.	Clear Cache ```./bin/magento cache:flush```
+9.	Setup vhost and restart apache
 
 <h2>Step 3: Install and verify the installation</h2>
 
