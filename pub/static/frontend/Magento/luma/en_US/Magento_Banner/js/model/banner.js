@@ -1,0 +1,1 @@
+/Volumes/Sites/magento2ee/vendor/magento/module-banner/view/frontend/web/js/model/banner.js

@@ -1,0 +1,1 @@
+/Volumes/Sites/magento2ee/vendor/magento/module-customer/view/frontend/web/js/view/authentication-popup.js

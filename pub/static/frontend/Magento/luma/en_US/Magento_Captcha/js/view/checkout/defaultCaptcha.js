@@ -1,0 +1,1 @@
+/Volumes/Sites/magento2ee/vendor/magento/module-captcha/view/frontend/web/js/view/checkout/defaultCaptcha.js
